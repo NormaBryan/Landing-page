@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Norma Ryan | Fingerprint Administrator — Forensic Science Ireland</title>
+<meta name="description" content="Norma Ryan, Fingerprint Administrator at Forensic Science Ireland. Professional experience in public service, statutory decision-making, team leadership, operational improvement and administration.">
+<meta property="og:title" content="Norma Ryan | Professional Profile">
+<meta property="og:description" content="Fingerprint Administrator at Forensic Science Ireland, with experience in public service, leadership, decision-making and operational administration.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="">
+<!-- Add og:image later: 1200x630 PNG matching dark theme -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Norma Ryan | Fingerprint Administrator">
+<meta name="twitter:description" content="Professional profile, public service experience, leadership and qualifications.">
+<meta name="twitter:url" content="">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='82'%3E%F0%9F%94%8E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<script>
+(function(){
+  try {
+    if(localStorage.getItem("norma-theme")==="light")
+      document.documentElement.classList.add("light");
+  } catch(e){}
+})();
+</script>
+
+<style>
+:root{
+  --bg:#020a18;
+  --bg-grad:linear-gradient(170deg,#020a18 0%,#041028 40%,#06142e 70%,#020a18 100%);
+  --surface:rgba(8,24,56,0.85);
+  --border:rgba(0,170,255,0.12);
+  --border-glow:rgba(0,170,255,0.3);
+  --text:#d0e0f0;
+  --text-bright:#e8f0ff;
+  --text-dim:#6888aa;
+  --neon:#00aaff;
+  --cyan:#00e5ff;
+  --green:#00ff88;
+  --amber:#ffaa00;
+  --red:#ff4466;
+  --purple:#aa66ff;
+  --header-bg:rgba(2,10,24,.8);
+  --grid-color:rgba(125,180,255,.03);
+  --orb-opacity:.08;
+  --button-text:#020a18;
+  --shadow:rgba(0,0,0,.25);
+}
+html.light{
+  --bg:#eaf1fa;
+  --bg-grad:linear-gradient(170deg,#f5f9ff 0%,#eaf2fc 40%,#e2edf9 70%,#f5f9ff 100%);
+  --surface:rgba(255,255,255,.93);
+  --border:rgba(20,85,145,.18);
+  --border-glow:rgba(0,100,180,.35);
+  --text:#30465e;
+  --text-bright:#10243c;
+  --text-dim:#566f89;
+  --neon:#006cb8;
+  --cyan:#007f9c;
+  --green:#087f51;
+  --amber:#a86400;
+  --red:#bc3051;
+  --purple:#7440b6;
+  --header-bg:rgba(244,249,255,.84);
+  --grid-color:rgba(25,80,140,.04);
+  --orb-opacity:.065;
+  --button-text:#fff;
+  --shadow:rgba(23,57,95,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{
+  margin:0;
+  color:var(--text);
+  font:400 16px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+button,a{-webkit-tap-highlight-color:transparent}
+button{font:inherit;cursor:pointer}
+a{color:var(--neon);text-decoration:none;transition:color .2s,text-shadow .2s}
+a:hover{color:var(--cyan);text-shadow:0 0 12px rgba(0,170,255,.2)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+.background{
+  position:fixed;inset:0;z-index:-2;
+  background:var(--bg-grad);
+  pointer-events:none;overflow:hidden;
+}
+.background:before{
+  content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(var(--grid-color) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid-color) 1px,transparent 1px);
+  background-size:60px 60px;
+}
+.orb{
+  position:absolute;width:330px;height:330px;border-radius:50%;
+  filter:blur(100px);opacity:var(--orb-opacity);
+  animation:orbit 23s ease-in-out infinite alternate;
+}
+.orb.one{background:#00aaff;top:8%;left:-300px}
+.orb.two{background:#aa66ff;top:45%;right:-300px;animation-delay:-9s}
+.orb.three{background:#00e5ff;bottom:-130px;left:-300px;animation-delay:-15s}
+@keyframes orbit{
+  from{transform:translate(-25px,-40px)}
+  to{transform:translate(35px,75px)}
+}
+.container{max-width:880px;margin:0 auto;padding:0 20px}
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:var(--header-bg);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+}
+.header-inner{
+  min-height:72px;display:flex;align-items:center;
+  justify-content:space-between;gap:16px;
+}
+.brand{color:var(--text-bright);font-size:17px;font-weight:800;letter-spacing:-.5px}
+.brand span{color:var(--neon)}
+.header-actions{display:flex;gap:9px}
+.icon-button{
+  display:grid;place-items:center;width:42px;height:42px;
+  border:1px solid var(--border);border-radius:12px;
+  background:var(--surface);color:var(--text-bright);
+  transition:border-color .2s,transform .2s;
+}
+.icon-button:hover{border-color:var(--border-glow);transform:translateY(-2px)}
+.icon-button svg{
+  width:19px;height:19px;fill:none;stroke:currentColor;
+  stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;
+}
+.moon{display:none}
+html.light .moon{display:block}
+html.light .sun{display:none}
+.content-layer{position:relative;z-index:1}
+.hero{padding:88px 0 73px;border-bottom:1px solid var(--border)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  color:var(--cyan);font-size:11px;font-weight:800;
+  letter-spacing:2px;text-transform:uppercase;margin-bottom:22px;
+}
+.eyebrow:before{
+  content:"";width:8px;height:8px;background:var(--green);
+  border-radius:50%;box-shadow:0 0 12px rgba(0,255,136,.4);
+}
+h1,h2,h3,p{margin-top:0}
+h1{
+  color:var(--text-bright);
+  font-size:clamp(52px,9vw,91px);
+  line-height:1.06;font-weight:900;
+  letter-spacing:-4px;margin-bottom:15px;
+}
+.gradient-name{
+  background:linear-gradient(110deg,var(--text-bright) 25%,var(--neon) 95%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.role{
+  font-size:clamp(16px,2.5vw,20px);
+  font-weight:700;color:var(--neon);margin-bottom:8px;
+}
+.organisation{
+  font-size:14px;color:var(--text-dim);
+  margin-bottom:28px;font-weight:600;
+}
+.hero-statement{
+  max-width:760px;font-size:clamp(21px,3.4vw,30px);
+  font-weight:500;line-height:1.47;letter-spacing:-.8px;
+  color:var(--text-bright);margin-bottom:32px;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.primary-cta{
+  display:inline-flex;justify-content:center;align-items:center;gap:13px;
+  padding:15px 24px;background:var(--neon);color:var(--button-text);
+  border-radius:11px;font-weight:800;
+  box-shadow:0 6px 25px rgba(0,170,255,.16);
+  transition:transform .2s,box-shadow .2s,background .2s;
+}
+.primary-cta:hover{
+  color:var(--button-text);background:var(--cyan);
+  transform:translateY(-3px);
+  box-shadow:0 9px 32px rgba(0,170,255,.25);
+  text-shadow:none;
+}
+.secondary-cta{
+  display:inline-flex;align-items:center;padding:14px 19px;
+  border:1px solid var(--border);border-radius:11px;
+  color:var(--text-bright);font-weight:600;
+}
+.hero-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:15px;margin-top:55px;
+}
+.stat{
+  padding:18px 20px;background:var(--surface);
+  border:1px solid var(--border);border-radius:14px;
+}
+.stat-value{
+  display:block;color:var(--cyan);
+  font-size:clamp(22px,4vw,29px);
+  font-weight:800;letter-spacing:-1px;
+}
+.stat-label{color:var(--text-dim);font-size:12px;line-height:1.5}
+.sections{padding:52px 0 70px;display:grid;gap:17px}
+.section{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:17px;overflow:hidden;
+  box-shadow:0 7px 30px var(--shadow);
+  transition:border-color .25s;
+  scroll-margin-top:90px;
+}
+.section:hover{border-color:var(--border-glow)}
+.section-toggle{
+  display:flex;align-items:center;width:100%;gap:15px;
+  padding:24px 25px;border:0;background:transparent;
+  color:var(--text-bright);text-align:left;
+}
+.section-number{
+  width:36px;height:36px;display:grid;place-items:center;
+  flex-shrink:0;border-radius:50%;
+  border:1px solid var(--border-glow);
+  color:var(--cyan);font-size:13px;font-weight:800;
+}
+.section-title{
+  flex:1;font-size:clamp(17px,3vw,21px);
+  font-weight:800;letter-spacing:-.5px;
+}
+.plus-minus{
+  display:grid;place-items:center;width:29px;height:29px;
+  border-radius:8px;background:rgba(0,170,255,.07);
+  color:var(--neon);font-size:22px;line-height:1;
+}
+.section-body{
+  display:grid;grid-template-rows:1fr;opacity:1;
+  transition:grid-template-rows .35s ease,opacity .3s ease;
+}
+.section-body>.inner{overflow:hidden}
+.section.closed .section-body{grid-template-rows:0fr;opacity:0}
+.section-content{padding:0 25px 28px 76px}
+.section-content p{color:var(--text);margin-bottom:16px}
+.section-content p:last-child{margin-bottom:0}
+.section-content h3{
+  font-size:15px;color:var(--text-bright);
+  font-weight:800;margin:23px 0 8px;
+}
+.section-content h3:first-child{margin-top:0}
+.work-card{
+  padding:18px 19px;border-left:3px solid var(--neon);
+  background:rgba(0,170,255,.045);
+  border-radius:0 10px 10px 0;margin:13px 0;
+}
+.work-card h3{margin:0 0 8px}
+.work-card p{margin:0;font-size:14px}
+.experience{padding:17px 0;border-bottom:1px solid var(--border)}
+.experience:last-child{border-bottom:0}
+.experience h3{margin:0 0 3px}
+.experience .meta{
+  color:var(--neon);font-size:12px;
+  font-weight:700;margin-bottom:8px;
+}
+.experience p{font-size:14px;margin:0}
+.education-card{padding:17px 0;border-bottom:1px solid var(--border)}
+.education-card:last-child{border-bottom:0}
+.education-card strong{
+  display:block;color:var(--text-bright);font-size:15px;
+}
+.education-card span{color:var(--text-dim);font-size:13px}
+.skills{display:flex;flex-wrap:wrap;gap:9px;margin:15px 0 27px}
+.skill{
+  padding:8px 12px;border:1px solid var(--border);
+  background:rgba(0,170,255,.055);
+  color:var(--text-bright);border-radius:8px;
+  font-size:12px;font-weight:600;
+}
+.contact-panel{
+  padding:24px;border:1px solid var(--border-glow);
+  border-radius:13px;
+  background:linear-gradient(130deg,rgba(0,170,255,.085),transparent);
+}
+.contact-panel h3{margin-top:0}
+.contact-panel p{font-size:14px}
+.footer{
+  border-top:1px solid var(--border);padding:30px 0 39px;
+  text-align:center;color:var(--text-dim);font-size:12px;
+}
+.footer strong{color:var(--text);font-weight:600}
+@media(max-width:600px){
+  .header-inner{min-height:64px}
+  .hero{padding:65px 0 53px}
+  h1{letter-spacing:-2.8px}
+  .hero-stats{gap:8px;margin-top:38px}
+  .stat{padding:13px 10px}
+  .stat-label{font-size:10px}
+  .sections{padding-top:34px}
+  .section-toggle{padding:19px 15px;gap:11px}
+  .section-content{padding:0 17px 23px}
+  .section-number{width:31px;height:31px}
+  .contact-panel{padding:19px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{
+    animation-duration:.01ms!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="background" aria-hidden="true">
+  <div class="orb one"></div>
+  <div class="orb two"></div>
+  <div class="orb three"></div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">Norma<span>.</span>Ryan</a>
+    <div class="header-actions">
+      <button class="icon-button" id="themeToggle" type="button" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+        </svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.9 13.1A9 9 0 0 1 10.9 3.1 9 9 0 1 0 20.9 13.1Z"></path>
+        </svg>
+      </button>
+      <button class="icon-button" id="collapseAll" type="button" title="Collapse all sections" aria-label="Collapse all sections" aria-expanded="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="4" y="4" width="16" height="16" rx="3"></rect>
+          <path id="collapseIcon" d="M8 12h8"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="content-layer container" id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="eyebrow">Forensic Science · Public Service · Professional Administration</div>
+    <h1 id="hero-title"><span class="gradient-name">Norma Ryan</span></h1>
+    <p class="role">Fingerprint Administrator</p>
+    <p class="organisation">Forensic Science Ireland</p>
+    <p class="hero-statement">
+      I bring experience in public service, leadership, statutory decision-making and operational improvement to my current role as Fingerprint Administrator with Forensic Science Ireland.
+    </p>
+    <div class="hero-actions">
+      <a class="primary-cta" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      <a class="secondary-cta" href="#experience">Explore my experience ↓</a>
+    </div>
+    <div class="hero-stats" aria-label="Previous professional achievements">
+      <div class="stat">
+        <span class="stat-value">3,000</span>
+        <span class="stat-label">Approximate OFP claims reviewed in previous DSP role</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">500</span>
+        <span class="stat-label">Approximate overpayment calculations in previous DSP role</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">4</span>
+        <span class="stat-label">Sections supported through cross-training</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="sections">
+
+    <section class="section" id="about">
+      <button class="section-toggle" type="button" aria-expanded="true" aria-controls="body1">
+        <span class="section-number">1</span>
+        <span class="section-title">About Me</span>
+        <span class="plus-minus" aria-hidden="true">−</span>
+      </button>
+      <div class="section-body" id="body1"><div class="inner"><div class="section-content">
+        <p>I am currently a Fingerprint Administrator with Forensic Science Ireland. My professional background spans public service administration, statutory decision-making, people management, operational improvement and education.</p>
+        <p>Previously, I worked as an Executive Officer and Statutory Deciding Officer with the Department of Social Protection at Tallaght Intreo Centre. I managed staff, assessed complex social welfare claims, reviewed evidence, applied legislation and led operational control work.</p>
+        <p>My wider career includes roles in education, special needs support, logistics, financial analysis, hospitality and employee representation. I bring this varied experience to my current professional role.</p>
+        <p>I hold a Level 7 Certificate in Social Protection Decision Making and am studying part-time towards a BA (Honours) in Business Management at the National College of Ireland.</p>
+      </div></div></div>
+    </section>
+
+    <section class="section" id="achievements">
+      <button class="section-toggle" type="button" aria-expanded="true" aria-controls="body2">
+        <span class="section-number">2</span>
+        <span class="section-title">Leadership &amp; Key Achievements</span>
+        <span class="plus-minus" aria-hidden="true">−</span>
+      </button>
+      <div class="section-body" id="body2"><div class="inner"><div class="section-content">
+        <p>My previous work with the Department of Social Protection gave me experience of managing teams, taking responsibility for complex decisions, addressing outstanding workloads and supporting organisational change.</p>
+
+        <div class="work-card">
+          <h3>Control Team Leadership</h3>
+          <p>Selected to establish and lead a Control Team in September 2024, addressing a backlog of control reviews dating back approximately three years.</p>
+        </div>
+        <div class="work-card">
+          <h3>One-Parent Family Payment Review</h3>
+          <p>Initiated a full review of approximately 3,000 claims, resulting in approximately 500 overpayment calculations.</p>
+        </div>
+        <div class="work-card">
+          <h3>Staff Development and Organisational Change</h3>
+          <p>Managed five Clerical Officers, trained and mentored staff, improved administrative procedures and supported cross-training across four sections.</p>
+        </div>
+
+        <h3>Working Across Agencies</h3>
+        <p>My previous responsibilities involved liaising with Social Welfare Inspectors, the Special Investigation Unit and An Garda Síochána where appropriate, alongside preparing detailed case assessments and supporting fair statutory decisions.</p>
+      </div></div></div>
+    </section>
+
+    <section class="section" id="experience">
+      <button class="section-toggle" type="button" aria-expanded="true" aria-controls="body3">
+        <span class="section-number">3</span>
+        <span class="section-title">Professional Experience</span>
+        <span class="plus-minus" aria-hidden="true">−</span>
+      </button>
+      <div class="section-body" id="body3"><div class="inner"><div class="section-content">
+
+        <div class="experience">
+          <h3>Fingerprint Administrator — Forensic Science Ireland</h3>
+          <div class="meta">Current Position</div>
+          <p>Currently working as a Fingerprint Administrator with Forensic Science Ireland. This is my current professional appointment.</p>
+        </div>
+
+        <div class="experience">
+          <h3>Executive Officer &amp; Statutory Deciding Officer — Department of Social Protection</h3>
+          <div class="meta">Tallaght Intreo Centre · Commenced August 2023 · Previous Role</div>
+          <p>Managed and supervised staff, exercised statutory responsibilities as a Deciding Officer, assessed complex cases, led control reviews, supported organisational change and oversaw operational and financial processes.</p>
+        </div>
+
+        <div class="experience">
+          <h3>Montessori Room Leader</h3>
+          <div class="meta">January 2016 – August 2018</div>
+          <p>Managed classroom operations, supervised two staff members, maintained regulatory compliance and supported children's learning and development.</p>
+        </div>
+
+        <div class="experience">
+          <h3>Special Needs Assistant</h3>
+          <div class="meta">Sandymount Park Secondary School · Approximately 6 years</div>
+          <p>Supported students with autism and additional educational needs, including mainstream integration, examinations, technology-assisted learning and de-escalation.</p>
+        </div>
+
+        <div class="experience">
+          <h3>Teacher — Mathematics &amp; Physical Education</h3>
+          <p>Planned and delivered lessons across year groups and ability levels, assessed student progress and adapted teaching methods to individual learning needs.</p>
+        </div>
+
+        <div class="experience">
+          <h3>Shipping Administrator / Logistics Coordinator — Munekata</h3>
+          <p>Managed orders and delivery schedules for clients including Panasonic, Sony, Dell, Bose, JVC and Apple. Coordinated a Panasonic rework project in Wales involving approximately 25 agency staff.</p>
+        </div>
+
+        <div class="experience">
+          <h3>Stock Analyst — Calculation Services</h3>
+          <p>Conducted stock valuations for retailers including Penneys and Roches Stores, working with substantial quantities of data under strict accuracy and deadline requirements.</p>
+        </div>
+
+        <div class="experience">
+          <h3>Leisure Club Receptionist / Front Reception &amp; Sales Assistant — Johnstown House Hotel</h3>
+          <p>Handled customer enquiries, membership sales, events, complaints and coordination across hotel departments.</p>
+        </div>
+
+        <div class="experience">
+          <h3>SIPTU Shop Steward</h3>
+          <p>Represented colleagues in employment-related matters, participated in negotiations and gained experience of employment relations and Labour Court processes.</p>
+        </div>
+
+      </div></div></div>
+    </section>
+
+    <section class="section" id="education">
+      <button class="section-toggle" type="button" aria-expanded="true" aria-controls="body4">
+        <span class="section-number">4</span>
+        <span class="section-title">Education &amp; Qualifications</span>
+        <span class="plus-minus" aria-hidden="true">−</span>
+      </button>
+      <div class="section-body" id="body4"><div class="inner"><div class="section-content">
+        <div class="education-card">
+          <strong>BA (Honours) Business Management</strong>
+          <span>National College of Ireland · Studying part-time · Expected completion August 2027</span>
+        </div>
+        <div class="education-card">
+          <strong>Certificate in Social Protection Decision Making — Level 7</strong>
+          <span>National College of Ireland · Completed</span>
+        </div>
+        <div class="education-card">
+          <strong>Departmental Deciding Officer Training</strong>
+          <span>Department of Social Protection · Completed</span>
+        </div>
+        <p style="margin-top:20px">I continue to develop my professional knowledge through formal education, training and practical experience across different working environments.</p>
+      </div></div></div>
+    </section>
+
+    <section class="section" id="contact">
+      <button class="section-toggle" type="button" aria-expanded="true" aria-controls="body5">
+        <span class="section-number">5</span>
+        <span class="section-title">Skills &amp; Contact</span>
+        <span class="plus-minus" aria-hidden="true">−</span>
+      </button>
+      <div class="section-body" id="body5"><div class="inner"><div class="section-content">
+        <p>My professional experience combines administration, leadership, decision-making, communication and the ability to work with complex information.</p>
+        <div class="skills">
+          <span class="skill">Professional Administration</span>
+          <span class="skill">Public Service</span>
+          <span class="skill">People Management</span>
+          <span class="skill">Leadership</span>
+          <span class="skill">Analysis &amp; Decision-Making</span>
+          <span class="skill">Statutory Decision-Making</span>
+          <span class="skill">Communication</span>
+          <span class="skill">Negotiation</span>
+          <span class="skill">Training &amp; Mentoring</span>
+          <span class="skill">Financial Controls</span>
+          <span class="skill">Organisational Change</span>
+          <span class="skill">Operational Improvement</span>
+          <span class="skill">Complex Case Management</span>
+          <span class="skill">Stakeholder Collaboration</span>
+        </div>
+        <div class="contact-panel">
+          <h3>Let's connect</h3>
+          <p>I welcome professional conversations about opportunities involving administration, public service, leadership, decision-making and operational improvement.</p>
+          <p>Professional contact details can be added here when available.</p>
+        </div>
+      </div></div></div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <strong>Norma Ryan</strong> · <span id="year">2026</span> · Built with the AI Badge
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  const root=document.documentElement;
+  const themeToggle=document.getElementById("themeToggle");
+  const collapseAll=document.getElementById("collapseAll");
+  const collapseIcon=document.getElementById("collapseIcon");
+  const sections=Array.from(document.querySelectorAll(".section"));
+
+  document.getElementById("year").textContent=new Date().getFullYear();
+
+  themeToggle.addEventListener("click",function(){
+    const light=root.classList.toggle("light");
+    try{localStorage.setItem("norma-theme",light?"light":"dark")}catch(e){}
+    themeToggle.setAttribute("aria-label",light?"Switch to dark mode":"Switch to light mode");
+  });
+
+  function setSection(section,open){
+    section.classList.toggle("closed",!open);
+    section.querySelector(".section-toggle").setAttribute("aria-expanded",String(open));
+    section.querySelector(".plus-minus").textContent=open?"−":"+";
+  }
+
+  function updateAllButton(){
+    const allOpen=sections.every(s=>!s.classList.contains("closed"));
+    collapseAll.title=allOpen?"Collapse all sections":"Expand all sections";
+    collapseAll.setAttribute("aria-label",collapseAll.title);
+    collapseAll.setAttribute("aria-expanded",String(allOpen));
+    collapseIcon.setAttribute("d",allOpen?"M8 12h8":"M8 12h8M12 8v8");
+  }
+
+  sections.forEach(section=>{
+    section.querySelector(".section-toggle").addEventListener("click",()=>{
+      setSection(section,section.classList.contains("closed"));
+      updateAllButton();
+    });
+  });
+
+  collapseAll.addEventListener("click",()=>{
+    const allOpen=sections.every(s=>!s.classList.contains("closed"));
+    sections.forEach(s=>setSection(s,!allOpen));
+    updateAllButton();
+  });
+
+  function openTargetFromHash(){
+    const id=decodeURIComponent(location.hash.slice(1));
+    if(!id)return;
+    const target=document.getElementById(id);
+    if(!target)return;
+    const section=target.classList.contains("section")?target:target.closest(".section");
+    if(section){setSection(section,true);updateAllButton()}
+  }
+
+  window.addEventListener("hashchange",openTargetFromHash);
+  document.querySelectorAll('a[href^="#"]').forEach(link=>{
+    link.addEventListener("click",()=>{
+      const target=document.getElementById(link.getAttribute("href").slice(1));
+      if(target&&target.classList.contains("section")){
+        setSection(target,true);
+        updateAllButton();
+      }
+    });
+  });
+
+  themeToggle.setAttribute("aria-label",
+    root.classList.contains("light")?"Switch to dark mode":"Switch to light mode");
+  updateAllButton();
+  openTargetFromHash();
+})();
+</script>
+</body>
+</html>
